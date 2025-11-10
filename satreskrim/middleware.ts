@@ -25,7 +25,6 @@ export async function middleware(request: NextRequest) {
               cookieStore.set(name, value, options)
             );
           } catch {
-            // Handle cookie setting error
           }
         },
       },
@@ -36,7 +35,6 @@ export async function middleware(request: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser();
 
-  // Blokir akses /admin dari mobile device
   const userAgent = request.headers.get('user-agent') || '';
   const isMobile = /Mobile|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
   
@@ -44,7 +42,6 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL('/', request.url));
   }
 
-  // Proteksi halaman admin - redirect ke login jika tidak ada user
   if (
     request.nextUrl.pathname.startsWith("/admin") &&
     request.nextUrl.pathname !== "/admin/login"
@@ -55,7 +52,6 @@ export async function middleware(request: NextRequest) {
     }
   }
 
-  // Redirect jika sudah login dan akses halaman login
   if (request.nextUrl.pathname === "/admin/login" && user) {
     return NextResponse.redirect(new URL("/admin", request.url));
   }

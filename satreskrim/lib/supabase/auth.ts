@@ -2,7 +2,6 @@ import { createServerClient } from "@supabase/ssr";
 import { createBrowserClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 
-// Server-side auth functions
 export async function getServerUser() {
   const cookieStore = await cookies();
   const supabase = createServerClient(
@@ -19,7 +18,6 @@ export async function getServerUser() {
               cookieStore.set(name, value, options)
             );
           } catch {
-            // Handle error
           }
         },
       },
@@ -49,7 +47,6 @@ export async function signOut() {
               cookieStore.set(name, value, options)
             );
           } catch {
-            // Handle error
           }
         },
       },
@@ -59,7 +56,6 @@ export async function signOut() {
   return await supabase.auth.signOut();
 }
 
-// Client-side auth hook
 import React from "react";
 
 export function useAuth() {

@@ -22,6 +22,7 @@ export default function ArtiLogoReserse() {
               <div className="text-white">
                 <div className="mb-6">
                   <p className="md:text-lg leading-relaxed text-justify text-base sm:text-sm mb-15">
+                    
                     Lambang fungsi Reserse merupakan perwujudan dari komitemen
                     dalam melaksanakan tugas pokok, fungsi dan peranannya dalam
                     menciptakan dan memelihara kamtibmas, menegakkan hukum serta

@@ -6,8 +6,8 @@ export const supabase = createBrowserClient(
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
   {
     auth: {
-      persistSession: false, // ⛔️ tidak disimpan di localStorage
-      autoRefreshToken: false, // tidak auto perpanjang session
+      persistSession: false, 
+      autoRefreshToken: false, 
     },
   }
 );

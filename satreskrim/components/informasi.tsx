@@ -38,7 +38,7 @@ export default function Informasi() {
                 Alamat Satreskrim Polres Sumedang
               </h2>
               <p className="sm:text-sm md:text-lg text-white mb-4">
-                Jl. Prabu Gajah Agung No.4, Sumedang, Jawa Barat 45323
+                Jl. Prabu Gajah Agung No.48, Situ, Kec. Sumedang Utara, Kab. Sumedang, Jawa Barat 45621
               </p>
               <h2 className="sm:text-base md:text-xl font-semibold mb-2">
                 Jam Operasional
