@@ -9,6 +9,13 @@ export async function middleware(request: NextRequest) {
     },
   });
 
+const ua = request.headers.get("user-agent") || "";
+const isVercelBot = /Vercelbot|vercel/i.test(ua);
+
+if (isVercelBot) {
+  return NextResponse.next();
+}
+
   const cookieStore = await cookies();
 
   const supabase = createServerClient(
@@ -38,19 +45,19 @@ export async function middleware(request: NextRequest) {
   const userAgent = request.headers.get('user-agent') || '';
   const isMobile = /Mobile|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
   
-  if (request.nextUrl.pathname.startsWith('/admin') && isMobile) {
-    return NextResponse.redirect(new URL('/', request.url));
-  }
+ if (request.nextUrl.pathname.startsWith("/admin") && isMobile) {
+   return NextResponse.redirect(new URL("/", request.url));
+ }
+
 
   if (
     request.nextUrl.pathname.startsWith("/admin") &&
-    request.nextUrl.pathname !== "/admin/login"
+    request.nextUrl.pathname !== "/admin/login" &&
+    isMobile
   ) {
-    if (!user) {
-      const url = new URL("/admin/login", request.url);
-      return NextResponse.redirect(url);
-    }
+    return NextResponse.redirect(new URL("/", request.url));
   }
+
 
   if (request.nextUrl.pathname === "/admin/login" && user) {
     return NextResponse.redirect(new URL("/admin", request.url));
@@ -60,5 +67,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/admin/:path*", "/admin/login"],
+  matcher: ["/admin/:path*"],
 };
