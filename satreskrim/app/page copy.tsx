@@ -1,19 +1,19 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { supabase } from "../lib/supabase/client";
+import { supabase } from "../../lib/supabase/client";
 import PembuatanBAP from "../components/pembuatanBAP";
-import PelayananSidikJari from "../components/pelayananSidikJari";
-import PelayananPerkaraPidana from "../components/pelayananPerkaraPidana";
-import SususnanOrganisasiDanTataKerja from "../components/sotk";
-import ArtiLogoReserse from "../components/artiLogoReserse";
-import VisiMIsi from "../components/visimisi";
-import Hero from "../components/hero";
+import PelayananSidikJari from "../../components/pelayananSidikJari";
+import PelayananPerkaraPidana from "../../components/pelayananPerkaraPidana";
+import SususnanOrganisasiDanTataKerja from "../../components/sotk";
+import ArtiLogoReserse from "../../components/artiLogoReserse";
+import VisiMIsi from "../../components/visimisi";
+import Hero from "../../components/hero";
 import Image from "next/image";
 import Link from "next/link";
-import KringReserse from "./admin/kring-reserse/page";
-import Informasi from "../components/informasi";
-import Footer from "../components/footer";
+import KringReserse from "../admin/kring-reserse/page";
+import Informasi from "../../components/informasi";
+import Footer from "../../components/footer";
 
 interface PressRelease {
   id: number;

@@ -1,6 +1,7 @@
 
 import "./globals.css";
-import NavbarWrapper from "@/components/navbarwrapper";
+import NavbarWrapper from "../components/navbarwrapper";
+
 
 export const metadata = {
   title: "Satreskrim Polres Sumedang",
@@ -22,7 +23,7 @@ export default function RootLayout({
     <html lang="id">
       <body className="bg-black text-white min-h-screen">
         <NavbarWrapper />
-        <main>{children}</main>
+        <main className="pt-19">{children}</main>
       </body>
     </html>
   );
