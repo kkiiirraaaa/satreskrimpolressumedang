@@ -1,8 +1,7 @@
-"use client";
 
 import "./globals.css";
-import { usePathname } from "next/navigation";
-import Navbar from "../../components/navbar";
+import NavbarWrapper from "../../components/navbarwrapper";
+
 
 export const metadata = {
   title: "Satreskrim Polres Sumedang",
@@ -18,14 +17,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const pathname = usePathname();
-
-  const hideGlobalLayout = pathname.startsWith("/admin");
+  
 
   return (
     <html lang="id">
       <body className="bg-black text-white min-h-screen">
-        {!hideGlobalLayout && <Navbar />}
+        <NavbarWrapper />
         <main className="pt-19">{children}</main>
       </body>
     </html>

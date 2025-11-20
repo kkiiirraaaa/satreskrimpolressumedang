@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -10,12 +10,12 @@ export default function Hero() {
           <p className="mt-4 sm:text-lg md:text-xl text-gray-200">
             Sidik Sakti Indera Waspada
           </p>
-          <a
+          <Link
             href="/#informasi"
             className="mt-6 sm:text-sm md:text-xl inline-block bg-red-700 hover:bg-amber-500 text-white  px-4 py-3 rounded-md font-semibold"
           >
             Selengkapnya
-          </a>
+          </Link>
         </div>
       </section>
     );

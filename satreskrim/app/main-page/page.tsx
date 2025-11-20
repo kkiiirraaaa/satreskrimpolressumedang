@@ -240,7 +240,7 @@ export default function MainPage() {
 
       <section
         id="pengungkapan-pelaku-kejahatan"
-        className="w-full min-h-screen px-6 py-20 bg-gradient-to-b from-red-700 to-black"
+        className="w-full min-h-screen px-6 py-20 bg-red-700"
       >
         <div className="max-w-6xl mx-auto px-6 md:px-12">
           <h2 className="pt-20 sm:text-lg md:text-3xl font-bold text-yellow-400 mb-15 text-center">
@@ -266,7 +266,7 @@ export default function MainPage() {
                         alt={item.judul}
                         width={450}
                         height={300}
-                        className="w-full sm:h-30 md:h-60 object-cover"
+                        className="w-full sm:h-30  h-60 object-cover"
                       />
                     )}
                     <div className="p-6">
@@ -300,6 +300,8 @@ export default function MainPage() {
           )}
         </div>
       </section>
+
+    
 
       <Informasi />
       <Footer />

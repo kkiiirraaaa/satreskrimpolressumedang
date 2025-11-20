@@ -155,16 +155,6 @@ export default function AdminLogin() {
                   {loading ? "Loading..." : "Login"}
                 </button>
               </form>
-
-              <p className="text-sm font-light text-gray-500  text-center">
-                Belum punya akun?
-                <a
-                  href="/admin/register"
-                  className="font-medium text-blue-600 hover:underline "
-                >
-                  Daftar di sini!
-                </a>
-              </p>
             </div>
           </div>
         </div>

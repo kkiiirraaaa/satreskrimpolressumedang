@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { supabase } from "../../../lib/supabase/client";
 
@@ -180,7 +181,7 @@ export default function PengungkapanPelakuKejahatan() {
             className="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer transition p-4"
             onClick={() => setSelected(item)}
           >
-            <img
+            <Image
               src={item.foto_url || "/no-image.png"}
               alt={item.judul}
               className="w-full h-48 object-cover rounded-lg mb-3"
@@ -354,7 +355,7 @@ export default function PengungkapanPelakuKejahatan() {
               ) : (
                 <>
                   <div className="p-4 md:p-5">
-                    <img
+                    <Image
                       src={selected.foto_url || "/no-image.png"}
                       alt={selected.judul}
                       className="w-full h-56 object-cover rounded mb-3"

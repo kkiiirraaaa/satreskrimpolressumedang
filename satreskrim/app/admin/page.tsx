@@ -2,11 +2,11 @@
 import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase/client";
 import { useRouter } from "next/navigation";
-import PengungkapanPelakuKejahatan from "./pengungkapan-pelaku-kejahatan/page";
 
 
 export default function DashboardPage() {
   const router = useRouter();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [user, setUser] = useState<any>(null);
   const [counts, setCounts] = useState({
     pressrelease: 0,
@@ -28,7 +28,7 @@ export default function DashboardPage() {
               .from("kring_reserse")
               .select("*", { count: "exact", head: true }),
             supabase
-              .from("pengungkapan_perkara")
+              .from("penyelesaian_perkara")
               .select("*", { count: "exact", head: true }),
           ]);
 

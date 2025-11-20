@@ -1,3 +1,6 @@
+import Link from "next/link";
+import Image from "next/image";
+
 export default function Footer() {
     return (
       <div>
@@ -5,7 +8,7 @@ export default function Footer() {
           <div className="gap-10 mx-auto w-full max-w-screen-xl p-6 py-6 lg:py-8">
             <div className="max-w-6xl mx-auto md:flex md:justify-between">
               <div className="p-5 sm:ml-0 md:ml-4 flex items-center gap-3">
-                <img
+                <Image
                   src="/logo-bareskrim.png"
                   alt="Logo"
                   className="w-10 h-12"
@@ -21,12 +24,12 @@ export default function Footer() {
               </div>
               <div className="pl-5 md:text-right sm:text-start grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 text-sm">
                 <div>
-                  <a
+                  <Link
                     href="/#beranda"
                     className="mb-4 text-sm font-semibold text-white uppercase col-span-1"
                   >
                     Beranda
-                  </a>
+                  </Link>
                 </div>
                 <div>
                   <h2 className="mb-4 text-sm font-semibold text-white uppercase ">
@@ -34,22 +37,22 @@ export default function Footer() {
                   </h2>
                   <ul className="text-gray-300  font-medium">
                     <li className="mb-2">
-                      <a href="/#visi-misi" className="hover:underline">
+                      <Link href="/#visi-misi" className="hover:underline">
                         Visi & Misi
-                      </a>
+                      </Link>
                     </li>
                     <li className="mb-2">
-                      <a href="/#arti-logo-reserse" className="hover:underline">
+                      <Link href="/#arti-logo-reserse" className="hover:underline">
                         Arti Logo Reserse
-                      </a>
+                      </Link>
                     </li>
                     <li className="mb-2">
-                      <a
+                      <Link
                         href="/#susunan-organisasi-dan-tata-kerja"
                         className="hover:underline"
                       >
                         SOTK
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -59,25 +62,25 @@ export default function Footer() {
                   </h2>
                   <ul className="text-gray-300  font-medium">
                     <li className="mb-2">
-                      <a
+                      <Link
                         href="/#pelayanan-perkara-pidana"
                         className="hover:underline "
                       >
                         Pelayanan Perkara Pidana
-                      </a>
+                      </Link>
                     </li>
                     <li className="mb-2">
-                      <a
+                      <Link
                         href="/#pelayanan-sidik-jari"
                         className="hover:underline"
                       >
                         Pelayanan Sidik Jari
-                      </a>
+                      </Link>
                     </li>
                     <li className="mb-2">
-                      <a href="/#pelayanan-bap" className="hover:underline">
+                      <Link href="/#pelayanan-bap" className="hover:underline">
                         Pelayanan BAP
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -87,29 +90,29 @@ export default function Footer() {
                   </h2>
                   <ul className="text-gray-300 font-medium">
                     <li className="mb-2">
-                      <a href="/#press-release" className="hover:underline">
+                      <Link href="/#press-release" className="hover:underline">
                         Press Release
-                      </a>
+                      </Link>
                     </li>
                     <li className="mb-2">
-                      <a href="/#kring-reserse" className="hover:underline">
+                      <Link href="/#kring-reserse" className="hover:underline">
                         Kring Reserse
-                      </a>
+                      </Link>
                     </li>
                     <li className="mb-2">
-                      <a href="/#kring-reserse" className="hover:underline">
+                      <Link href="/#kring-reserse" className="hover:underline">
                         Kring Reserse
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
                 <div>
-                  <a
+                  <Link
                     href="/#informasi"
                     className="mb-4 text-sm font-semibold text-white uppercase "
                   >
                     Informasi
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -119,7 +122,7 @@ export default function Footer() {
                 © 2025 Satreskrim Polres Sumedang. All Rights Reserved.
               </span>
               <div className="flex mt-4 sm:justify-center sm:mt-0">
-                <a href="#" className="text-gray-300 hover:text-gray-600 ">
+                <Link href="#" className="text-gray-300 hover:text-gray-600 ">
                   <svg
                     className="w-6 h-6 text-gray-300 "
                     aria-hidden="true"
@@ -137,7 +140,7 @@ export default function Footer() {
                     />
                   </svg>
                   <span className="sr-only">Instagram Page</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

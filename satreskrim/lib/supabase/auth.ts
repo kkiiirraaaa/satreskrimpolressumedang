@@ -1,5 +1,4 @@
 import { createServerClient } from "@supabase/ssr";
-import { createBrowserClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 
 export async function getServerUser() {
@@ -59,8 +58,9 @@ export async function signOut() {
 import React from "react";
 
 export function useAuth() {
-  "use client";
+  ("use client");
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [user, setUser] = React.useState<any>(null);
   const [loading, setLoading] = React.useState(true);
 
