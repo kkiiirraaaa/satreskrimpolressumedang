@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="gap-10 mx-auto w-full max-w-screen-xl p-6 py-6 lg:py-8">
             <div className="max-w-6xl mx-auto md:flex md:justify-between">
               <div className="p-5 sm:ml-0 md:ml-4 flex items-center gap-3">
-                <Image
+                <img
                   src="/logo-bareskrim.png"
                   alt="Logo"
                   className="w-10 h-12"

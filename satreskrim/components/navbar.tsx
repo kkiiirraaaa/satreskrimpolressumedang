@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import { Menu, X, ChevronDown, Link } from "lucide-react";
 
@@ -51,9 +50,9 @@ useEffect(() => {
   return (
     <header className="fixed top-0 left-0 w-full bg-black text-white flex justify-between items-center px-4 sm:px-6 py-2 sm:py-3 z-50">
       <div className="flex items-center gap-2 sm:gap-3">
-        <Image
+        <img
           src="/logo-bareskrim.png"
-          alt="Logo"
+          alt="Logo"  
           className="w-8 h-10 sm:w-10 sm:h-12 md:w-12 md:h-14"
         />
         <div>
@@ -79,12 +78,12 @@ useEffect(() => {
       >
         <ul className="flex items-center">
           <li>
-            <Link
+            <a
               href="/#beranda"
               className="px-7 py-3 text-white hover:text-amber-400 font-semibold text-xl inline-block"
             >
               Beranda
-            </Link>
+            </a>
           </li>
 
           <li className="relative">
@@ -103,24 +102,24 @@ useEffect(() => {
 
             {activeDropdown === "profil" && (
               <div className="absolute left-0 top-full w-48 rounded-md bg-white bg-opacity-90 text-black shadow-lg mt-1">
-                <Link
+                <a
                   href="/#visi-misi"
                   className="block px-4 py-2 text-red-700 hover:text-amber-500"
                 >
                   Visi & Misi
-                </Link>
-                <Link
+                </a>
+                <a
                   href="/#arti-logo-reserse"
                   className="block px-4 py-2 text-red-700 hover:text-amber-500"
                 >
                   Arti Logo Reserse
-                </Link>
-                <Link
+                </a>
+                <a
                   href="/#susunan-organisasi-dan-tata-kerja"
                   className="block px-4 py-2 text-red-700 hover:text-amber-500"
                 >
                   SOTK
-                </Link>
+                </a>
               </div>
             )}
           </li>
@@ -141,24 +140,24 @@ useEffect(() => {
 
             {activeDropdown === "pelayanan" && (
               <div className="absolute left-0 top-full w-56 rounded-md bg-white bg-opacity-90 text-black shadow-lg mt-1">
-                <Link
+                <a
                   href="/#pelayanan-perkara-pidana"
                   className="block px-4 py-2 text-red-700 hover:text-amber-500"
                 >
                   Pelayanan Perkara Pidana
-                </Link>
-                <Link
+                </a>
+                <a
                   href="/#pelayanan-sidik-jari"
                   className="block px-4 py-2 text-red-700 hover:text-amber-500"
                 >
                   Pelayanan Sidik Jari
-                </Link>
-                <Link
+                </a>
+                <a
                   href="/#pembuatan-bap"
                   className="block px-4 py-2 text-red-700 hover:text-amber-500"
                 >
                   Pembuatan BAP
-                </Link>
+                </a>
               </div>
             )}
           </li>
@@ -179,35 +178,35 @@ useEffect(() => {
 
             {activeDropdown === "dokumentasi" && (
               <div className="absolute left-0 top-full w-56 rounded-md bg-white bg-opacity-90 text-black shadow-lg mt-1">
-                <Link
+                <a
                   href="/#press-release"
                   className="block px-4 py-2 text-red-700 hover:text-amber-500"
                 >
                   Press Release
-                </Link>
-                <Link
+                </a>
+                <a
                   href="/#kring-reserse"
                   className="block px-4 py-2 text-red-700 hover:text-amber-500"
                 >
                   Kring Reserse
-                </Link>
-                <Link
+                </a>
+                <a
                   href="/#pengungkapan-pelaku-kejahatan"
                   className="block px-4 py-2 text-red-700 hover:text-amber-500"
                 >
                   Pengungkapan Pelaku Kejahatan
-                </Link>
+                </a>
               </div>
             )}
           </li>
 
-          <li>
-            <Link
+          <li className="relative">
+            <a
               href="/#informasi"
               className="px-7 py-3 text-white hover:text-amber-400 font-semibold text-xl inline-block"
             >
               Informasi
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>
@@ -220,13 +219,13 @@ useEffect(() => {
       >
         <ul className="flex flex-col">
           <li className="border-b border-red-600">
-            <Link
+            <a
               href="/#beranda"
               className="block px-6 py-4 text-white hover:text-amber-400 hover:bg-red-800 font-semibold text-lg"
               onClick={() => setIsMenuOpen(false)}
             >
               Beranda
-            </Link>
+            </a>
           </li>
 
           <li className="border-b border-red-600">
@@ -248,27 +247,27 @@ useEffect(() => {
                 activeDropdown === "profil" ? "max-h-48" : "max-h-0"
               }`}
             >
-              <Link
+              <a
                 href="/#visi-misi"
                 className="block px-10 py-3 text-white hover:text-amber-400"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Visi & Misi
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/#arti-logo-reserse"
                 className="block px-10 py-3 text-white hover:text-amber-400"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Arti Logo Reserse
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/#susunan-organisasi-dan-tata-kerja"
                 className="block px-10 py-3 text-white hover:text-amber-400"
                 onClick={() => setIsMenuOpen(false)}
               >
                 SOTK
-              </Link>
+              </a>
             </div>
           </li>
 
@@ -291,27 +290,27 @@ useEffect(() => {
                 activeDropdown === "pelayanan" ? "max-h-48" : "max-h-0"
               }`}
             >
-              <Link
+              <a
                 href="/#pelayanan-perkara-pidana"
                 className="block px-10 py-3 text-white hover:text-amber-400"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Pelayanan Perkara Pidana
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/#pelayanan-sidik-jari"
                 className="block px-10 py-3 text-white hover:text-amber-400"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Pelayanan Sidik Jari
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/#pembuatan-bap"
                 className="block px-10 py-3 text-white hover:text-amber-400"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Pembuatan BAP
-              </Link>
+              </a>
             </div>
           </li>
 
@@ -334,38 +333,38 @@ useEffect(() => {
                 activeDropdown === "dokumentasi" ? "max-h-48" : "max-h-0"
               }`}
             >
-              <Link
+              <a
                 href="/#press-release"
                 className="block px-10 py-3 text-white hover:text-amber-400"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Press Release
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/#kring-reserse"
                 className="block px-10 py-3 text-white hover:text-amber-400"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Kring Reserse
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/#pengungkapan-pelaku-kejahatan"
                 className="block px-10 py-3 text-white hover:text-amber-400"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Pengungkapan Pelaku Kejahatan
-              </Link>
+              </a>
             </div>
           </li>
 
           <li>
-            <Link
+            <a
               href="/#informasi"
               className="block px-6 py-4 text-white hover:text-amber-400 hover:bg-red-800 font-semibold text-lg"
               onClick={() => setIsMenuOpen(false)}
             >
               Informasi
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>

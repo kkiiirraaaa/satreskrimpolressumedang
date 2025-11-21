@@ -14,7 +14,7 @@ export default function ArtiLogoReserse() {
             </h2>
             <div className="mx-auto flex flex-col md:flex-row items-center md:items-start gap-10">
               <div className="flex-shrink-0 w-16 md:w-32">
-                <Image
+                <img
                   src="/logo-bareskrim.png"
                   alt="Logo Bareskrim"
                   className="w-full h-auto"

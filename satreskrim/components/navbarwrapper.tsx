@@ -5,9 +5,9 @@ import Navbar from "@/components/navbar";
 
 export default function NavbarWrapper() {
   const pathname = usePathname();
-  const hideGlobalLayout = pathname.startsWith("/admin");
+  const hideRootLayout = pathname.startsWith("/admin");
 
-  if (hideGlobalLayout) return null;
+  if (hideRootLayout) return null;
 
   return <Navbar />;
 }

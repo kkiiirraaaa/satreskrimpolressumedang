@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="id">
       <body className="bg-black text-white min-h-screen">
         <NavbarWrapper />
-        <main className="pt-19">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );

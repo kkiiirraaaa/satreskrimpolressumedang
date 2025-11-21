@@ -29,7 +29,7 @@ export default function KringResersePage() {
   }, []);
 
   return (
-    <section className="py-20 bg-red-700 min-h-screen">
+    <section className="py-20 pt-30 bg-red-700 min-h-screen">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <h2 className="mb-12 text-4xl md:text-5xl font-bold text-yellow-400 text-center">
           Kring Reserse

@@ -29,7 +29,7 @@ export default function PengungkapanPelakuKejahatanPage() {
   }, []);
 
   return (
-    <section className="py-20 bg-gradient-to-b from-red-700 to-black min-h-screen">
+    <section className="py-20 pt-30 bg-gradient-to-b from-red-700 to-black min-h-screen">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <h2 className="mb-12 text-4xl md:text-5xl font-bold text-yellow-400 text-center">
           Pengungkapan Pelaku Kejahatan

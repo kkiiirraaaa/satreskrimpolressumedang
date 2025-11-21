@@ -240,7 +240,7 @@ export default function MainPage() {
 
       <section
         id="pengungkapan-pelaku-kejahatan"
-        className="w-full min-h-screen px-6 py-20 bg-red-700"
+        className="w-full min-h-screen px-6 py-20 bg-gradient-to-b from-red-700 to-black"
       >
         <div className="max-w-6xl mx-auto px-6 md:px-12">
           <h2 className="pt-20 sm:text-lg md:text-3xl font-bold text-yellow-400 mb-15 text-center">

@@ -45,14 +45,14 @@ export default function AdminLogin() {
   };
 
   return (
-    <div>
+    <div className="pt-0">
       <section className="bg-gray-50 :bg-gray-900">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           <a
             href="#"
             className="gap-3 flex items-center mb-6 text-2xl font-semibold text-gray-900 "
           >
-            <Image
+            <img
               width={26}
               height={26}
               className="mr-2"

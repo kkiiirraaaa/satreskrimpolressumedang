@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabase/client";
 
@@ -27,7 +26,7 @@ export default function SideBar() {
             <div className="flex items-center justify-between">
               <div className="flex items-center justify-start rtl:justify-end">
                 <a className="flex ms-2 md:me-24">
-                  <Image
+                  <img
                     src="/logo-bareskrim.png"
                     className="h-8 me-3"
                     alt="Satreskrim Logo"
@@ -49,7 +48,7 @@ export default function SideBar() {
           <div className="h-full px-3 pb-4 overflow-y-auto bg-white ">
             <ul className="space-y-2 font-medium">
               <li>
-                <Link
+                <a
                   href="/admin"
                   className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 "
                 >
@@ -67,10 +66,10 @@ export default function SideBar() {
                   </svg>
 
                   <span className="ms-3">Dashboard</span>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="/admin/press-release"
                   className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100  group"
                 >
@@ -93,10 +92,10 @@ export default function SideBar() {
                   <span className="flex-1 ms-3 whitespace-nowrap">
                     Press Release
                   </span>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="/admin/kring-reserse"
                   className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100  group"
                 >
@@ -120,10 +119,10 @@ export default function SideBar() {
                   <span className="flex-1 ms-3 whitespace-nowrap">
                     Kring Reserse
                   </span>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="/admin/pengungkapan-pelaku-kejahatan"
                   className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100  group"
                 >
@@ -146,7 +145,7 @@ export default function SideBar() {
                   <span className="flex-1 ms-3 whitespace-nowrap">
                     Pengungkapan <br /> Pelaku Kejahatan
                   </span>
-                </Link>
+                </a>
               </li>
               <li>
                 <div className="p-4 border-t border-gray-700">
